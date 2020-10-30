@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  functions = "functions"
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/resolveURL/:splat"
