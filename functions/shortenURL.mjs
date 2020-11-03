@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 import client from './utils';
 
-export async function handler(event, context) {  
+exports.handler = async (event, context) => {  
   if (event.httpMethod === 'POST') {
     // get data from POST request
     console.log(event)

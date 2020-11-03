@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 import client from './utils';
 
-export async function handler(event, context) {
+exports.handler = async (event, context) => {
 
   let short_url = event.path.split('/', 5)[4];
   let RESOLVE_URL_QUERY = gql`
